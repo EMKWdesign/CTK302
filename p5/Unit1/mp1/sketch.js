@@ -118,6 +118,26 @@ rect(225, 170, 250, 50);
    fill('white');
 rect(225, 240, 250, 50);
 
+  //nose
+     fill('pink');
+ellipse(360, 360, 50, 50);
+    fill('black');
+arc(315, 370, 100, 100, 245, HALF_PI);
+    fill('white');
+rect(190, 330, 120, 80);
+  fill('white');
+ellipse(190, 370, 80, 80);
+    fill('white');
+ellipse(315, 370, 80, 80);
+  blendMode(DARKEST);
+    fill('pink');
+ellipse(360, 360, 50, 50);
+   blendMode(BLEND);
+    fill('black');
+ellipse(360, 366, 10, 10);
+    fill('black');
+ellipse(315, 415, 10, 10);
+
 
   if (mouseIsPressed){
    //eyez
@@ -132,10 +152,4 @@ else {
 ellipse(260, 300, 50, 50);
    fill('black');
 ellipse(360, 300, 50, 50);
-}
-
-
-
-fill('white');
-text(mouseX + ',' + mouseY, 20, 20);
 }

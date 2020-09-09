@@ -18,3 +18,5 @@ function draw() {
   textFont(f2);
   textSize(30);
   text("Very Cool", width/2, height/2 + 100);
+
+}

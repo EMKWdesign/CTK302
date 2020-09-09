@@ -138,6 +138,10 @@ ellipse(360, 366, 10, 10);
     fill('black');
 ellipse(315, 415, 10, 10);
 
+let s = 'This is Cowboye. He is just a simple cowpoke that heards cattle all day long. Yeehaw.';
+fill(50);
+text(s, 10, 10, 300, 100); // Text wraps within text box
+
 
   if (mouseIsPressed){
    //eyez

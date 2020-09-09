@@ -1,7 +1,7 @@
 var song1;
 
 function preload(){
-  song1 = loadSound("assets/goodshiz.mp3");
+  song1 = loadSound("assets/nice.mp3");
 }
 
 function setup() {
@@ -10,7 +10,7 @@ createCanvas (500, 500);
 }
 
 function draw() {
-  background(100);
+  background('grey');
 
 }
 function mouseReleased(){

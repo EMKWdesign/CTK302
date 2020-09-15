@@ -53,6 +53,16 @@ function avatar() {
   fill('lightBlue');
   rect(475, 750, 225, 170);
 
+//grass
+  fill('darkOliveGreen');
+rect(295, 900, 110, 90);
+
+ fill('darkOliveGreen');
+rect(0, 900, 225, 90);
+
+   fill('darkOliveGreen');
+rect(475, 900, 225, 90);
+
   //Shoes
   fill('sienna');
   ellipse(225, 925, 110, 110);

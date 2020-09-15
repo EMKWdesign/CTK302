@@ -5,19 +5,31 @@ function setup() {
 }
 
 function draw() {
-  background(100);
+  //Background
+  background('lightBlue');
+  noStroke();
+  //groundback (appears behind avatar)
+  fill('darkOliveGreen');
+  rect(0, 500, 500, 45);
 
+  //textbox
+  let s = 'This is Cowboye. He is just a simple cowpoke that heards cattle all day long. Yeehaw.';
+  fill(50);
+  text(s, 10, 10, 300, 100); // Text wraps within text box
+
+//animated avatar
   push();
   translate(x, 0);
-  rect(0, 250, 50, 50);
+  scale(.5);
+  avatar();
   x = x + 5;
   if (x > width) {
-    x = 0;
-    pop();
-
+    x = -400;
   }
-}
+  pop();
 
-function setup() {
-  createCanvas(500, 500);
+  //groundfront (appears in front of avatar)
+  fill('oliveDrab');
+  rect(0, 500, 500, 40);
+
 }

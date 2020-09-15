@@ -33,3 +33,5 @@ function draw() {
   rect(0, 460, 500, 40);
 
 }
+
+//https://wallgrenmegan.github.io/CTK302/p5/Unit2/anim2/

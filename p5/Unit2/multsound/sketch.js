@@ -6,11 +6,11 @@ function preload() {
   song2 = loadSound("assets/BRODYQUEST.mp3");
   song3 = loadSound("assets/ToyFood.mp3");
 
-  song1.loop();
+  song1.play();
   song1.pause();
-  song2.loop();
+  song2.play();
   song2.pause();
-  song3.loop();
+  song3.play();
   song3.pause();
 }
 
@@ -64,5 +64,5 @@ function mouseReleased() {
 }
 
 function touchStarted() {
-getAudioContext().resume();
+  getAudioContext().resume();
 }

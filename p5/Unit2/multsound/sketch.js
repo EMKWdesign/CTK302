@@ -19,8 +19,8 @@ function setup() {
 }
 
 function draw() {
-  background(100);
 
+  background(100);
   switch (state) {
 
     case 0:
@@ -56,9 +56,10 @@ function mouseReleased() {
   song1.pause();
   song2.pause();
   song3.pause();
-
+  
   state++;
   if (state > 5) state = 0;
+
   }
 
 function touchStarted() {

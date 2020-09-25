@@ -15,7 +15,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(400, 400);
 }
 
 function draw() {
@@ -58,7 +58,7 @@ function mouseReleased() {
   song3.pause();
 
   state++;
-  if (state > 5) {
+  if (state > 2) {
     state = 0;
   }
 }

@@ -2,9 +2,9 @@ let state = 0;
 let song1, song2, song3;
 
 function preload() {
-  song1 = loadSound("assets/TaxiTaxi.mp3");
-  song2 = loadSound("assets/BRODYQUEST.mp3");
-  song3 = loadSound("assets/ToyFood.mp3");
+  song1 = loadSound("assets/donkey.mp3");
+  song2 = loadSound("assets/mk.mp3");
+  song3 = loadSound("assets/skate.mp3");
   song1.loop();
   song1.pause();
   song2.loop();

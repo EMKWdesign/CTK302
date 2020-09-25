@@ -49,9 +49,7 @@ function draw() {
     case 5:
       text("listen to song 3", 100, 100);
       break;
-
   }
-
 }
 
 function mouseReleased() {
@@ -62,6 +60,5 @@ function mouseReleased() {
   state++;
   if (state > 5) {
     state = 0;
-
   }
 }

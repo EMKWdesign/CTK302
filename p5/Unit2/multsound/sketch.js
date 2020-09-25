@@ -6,11 +6,11 @@ function preload() {
   song2 = loadSound("assets/BRODYQUEST.mp3");
   song3 = loadSound("assets/ToyFood.mp3");
 
-  song1.play();
+  song1.loop();
   song1.pause();
-  song2.play();
+  song2.loop();
   song2.pause();
-  song3.play();
+  song3.loop();
   song3.pause();
 }
 
@@ -58,10 +58,8 @@ function mouseReleased() {
   song3.pause();
 
   state++;
-  if (state > 2) {
-    state = 0;
+  if (state > 5) state = 0;
   }
-}
 
 function touchStarted() {
   getAudioContext().resume();

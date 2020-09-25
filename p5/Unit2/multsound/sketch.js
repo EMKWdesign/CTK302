@@ -62,3 +62,7 @@ function mouseReleased() {
     state = 0;
   }
 }
+
+function touchStarted() {
+getAudioContext().resume();
+}

@@ -7,7 +7,7 @@ function preload() {
 function setup() {
   createCanvas(windowWidth, windowHeight);
   textFont(myFont);
- textSize(20);
+ textSize(12);
 }
 
 function draw() {

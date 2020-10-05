@@ -1,45 +1,65 @@
+var x = 0;
+var velocity = 0;
 var mic;
 var vol;
 var c = 'lightBlue';
-let x = 0;
 let img;
+
 function preload() {
-  img = loadImage('assets/fish.png');
+  img1 = loadImage('assets/fish1.png');
+  img2 = loadImage('assets/fish2.png');
+  img3 = loadImage('assets/fish3.png');
+  img4 = loadImage('assets/fish4.png');
+  img5 = loadImage('assets/fish5.png');
+  img6 = loadImage('assets/fish6.png');
+  img7 = loadImage('assets/fish7.png');
+  img8 = loadImage('assets/fish8.png');
+  img9 = loadImage('assets/fish9.png');
 }
 
 function setup() {
-  createCanvas(windowHeight, windowWidth);
+  createCanvas(windowWidth, windowHeight);
+  rectMode(CENTER);
 
-  // code for initializing mic in.
   mic = new p5.AudioIn();
   mic.start();
-  // Top-left corner of the img is at (10, 10)
-  // Width and height are 50 x 50
 }
+
 
 function draw() {
   background(c);
+  fill('blue');
+  x = x + velocity;
+  vol = (mic.getLevel()).toFixed(2);
 
-  // get the sound input
-  vol = (mic.getLevel()).toFixed(2); // returned level is between 0 and 1
-
-  // check how loud the input is
-  if (vol > .02) { // if the volume is LOUD?
-// Do something
-    x = x + 1;
+  velocity = 1;
+  if (vol > .05) {
+    //speed
+    velocity = 10;
   }
-  image(img, x, 200, 201, 129.5);
 
-  // extra stuff for debugging
+//swimming right
+  image(img1, x - 200, 50, 200, 200);
+  image(img5, x - 200, 250, 200, 200);
+  image(img6, x - 200, 350, 200, 200);
+  image(img7, x - 200, 450, 200, 200);
+  image(img8, x - 200, 550, 200, 200);
+
+//swimming left
+image(img3, x - 200, 150, 200, 200);
+  image(img2, x - 200, 500, 200, 200);
+  image(img4, x - 200, 300, 200, 200);
+  image(img9, x - 200, 100, 200, 200);
+
+  //loop
+  if (x > width + 200) x = 0;
+
   textSize(18);
-  text("Click the screen \n& make some noise! \nMy volume is " + vol, 10, 60);
+  text("Click the screen first to give\npermission for mic input.\nMy volume is " + vol, 10, 60);
 
 
 }
 
-
-// you need this code for audio programs and also, the user
-// needs to click the screen before the mic input will work.
 
 function touchStarted() {
   getAudioContext().resume();

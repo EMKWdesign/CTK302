@@ -46,5 +46,3 @@ function touchStarted() {
   getAudioContext().resume();
   state++
 }
-
-Message @vanna_spite

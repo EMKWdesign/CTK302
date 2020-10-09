@@ -50,7 +50,7 @@ image(img9,0 ,0 , width, height);
 
     case 1:
       image(img1, x - 200, 100, 200, 200);
-      text("Haha nice! That tickles. \nDo it again. \n(Add a finger)", 20, 80);
+      text("Blub. \n(Add a finger)", 20, 80);
 
       // put a picture here
       break;
@@ -58,7 +58,7 @@ image(img9,0 ,0 , width, height);
     case 2:
       image(img1, x - 200, 100, 200, 200);
       image(img6, x - 300, 350, 200, 200);
-      text("Woah! Hahaha! \nMore! More! Hahaha! \n(Add a finger)", 20, 80);
+      text("Blub. \nBlub. \n(Add a finger)", 20, 80);
       // put a picture here
       break;
 
@@ -66,7 +66,7 @@ image(img9,0 ,0 , width, height);
     image(img1, x - 200, 100, 200, 200);
     image(img6, x - 300, 350, 200, 200);
       image(img8, x - 400, 550, 200, 200);
-      text("HAHAHAHA! Oh my gosh- I can barely breathe \n It tickles so much! HAHA- \n(Add a finger)", 20, 80);
+      text("Blub.\n Blub.\n Blub. \n(Add a finger)", 20, 80);
       // put a picture here
       break;
 

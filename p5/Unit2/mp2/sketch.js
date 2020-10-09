@@ -13,7 +13,7 @@ function preload() {
 
   img5 = loadImage('assets/fish5.png');
   img7 = loadImage('assets/fish7.png');
-  img8 = loadImage('assets/tank.png');
+  img9 = loadImage('assets/tank.png');
 }
 
 function setup() {
@@ -31,7 +31,7 @@ function draw() {
   text(numberOfTouches + 'touches', 20, 40);
 
   background(c);
-image(img8,0 ,0 , width, height);
+image(img9,0 ,0 , width, height);
   x = x + velocity;
   vol = (mic.getLevel()).toFixed(2);
 

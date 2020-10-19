@@ -16,7 +16,7 @@ function draw() {
   for (let i = 0; i < cars.length; i++) {
     cars[i].display();
     cars[i].move();
-    if (car[i].a <= 0) {
+    if (cars[i].a <= 0) {
       cars.splice(i, 1);
     }
   }

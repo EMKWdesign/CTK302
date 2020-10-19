@@ -46,6 +46,7 @@ class Car {
 
   move() {
     this.pos.add(this.vel);
+    //opacity lessens
     this.a = this.a - 5;
 
   }

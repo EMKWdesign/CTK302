@@ -26,15 +26,20 @@ class Car {
   constructor() {
     //attributes
     this.pos = createVector(100, 100);
+    //velocity & particle angle: positive positive is aimed down to the right
     this.vel = createVector(random(10), random(10));
+    //color rgb
     this.r = random(255);
     this.g = random(255);
     this.b = random(255);
-    this.a = random(255);
+    //opacity or alpha
+    this.a = random(200, 255);
+    //size
     this.s = random(10, 20);
   }
   //methods
   display() {
+    //if you create an attribute, you must use the attribute
     fill(this.r, this.g, this.b, this.a, this.s);
     ellipse(this.pos.x, this.pos.y, 20);
   }

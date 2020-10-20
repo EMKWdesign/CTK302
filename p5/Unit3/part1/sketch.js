@@ -7,7 +7,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(2880, 2100);
+  createCanvas(2880/2, 2100/2);
 
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
   background(c);
-  image(img, 0, 0, 2880, 2100);
+  image(img, 0, 0, 2880/2, 2100/2);
   cars.push(new Car());
 
   for (let i = 0; i < cars.length; i++) {

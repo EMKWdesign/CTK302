@@ -36,7 +36,7 @@ class Car {
   //methods
   display() {
     fill(this.r, this.g, this.b, this.a);
-    ellipse(this.pos.x, this.pos.y, 20);
+    rect(this.pos.x, this.pos.y, 20);
   }
 
   move() {

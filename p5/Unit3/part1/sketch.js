@@ -1,7 +1,13 @@
 let cars = [];
+var c = 'lightBlue';
+let img;
+
+function preload() {
+img = loadImage('assets/tank.png');
+}
 
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(2880, 2100);
 
   // for (let i = 0; i < 20; i++) {
   //   cars.push(new Car());
@@ -10,7 +16,8 @@ function setup() {
 }
 
 function draw() {
-  background('grey');
+  background(c);
+  image(img9,0 ,0 , 2880, 2100);
   cars.push(new Car());
 
   for (let i = 0; i < cars.length; i++) {
@@ -36,7 +43,7 @@ class Car {
   //methods
   display() {
     fill(this.r, this.g, this.b, this.a);
-    rect(this.pos.x, this.pos.y, 20, 20);
+    ellipse(this.pos.x, this.pos.y, 20, 20);
   }
 
   move() {

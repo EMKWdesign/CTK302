@@ -3,7 +3,7 @@ var c = 'lightBlue';
 let img;
 
 function preload() {
-img = loadImage('assets/tank.png');
+  img = loadImage('assets/tank1.png');
 }
 
 function setup() {
@@ -17,7 +17,7 @@ function setup() {
 
 function draw() {
   background(c);
-  image(img9,0 ,0 , 2880, 2100);
+  image(img9, 0, 0, 2880, 2100);
   cars.push(new Car());
 
   for (let i = 0; i < cars.length; i++) {

@@ -33,7 +33,7 @@ class Car {
 
   constructor() {
     //attributes
-    this.pos = createVector(width / 2, height - 80);
+    this.pos = createVector(900, height - 400);
     this.vel = createVector(random(-.8, .8), random(-8, -3));
     this.r = 255; //random(255);
     this.g = 255; //random(255);
@@ -48,7 +48,7 @@ class Car {
 
   move() {
     this.pos.add(this.vel);
-    this.a = this.a - 5;
+    this.a = this.a - 3;
 
   }
 

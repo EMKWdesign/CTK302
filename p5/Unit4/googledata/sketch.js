@@ -1,6 +1,6 @@
 var font;
 var bubbles = [];
-let img;
+let img1;
 
 function preload() {
   song1 = loadSound("assets/Danny.m4a");

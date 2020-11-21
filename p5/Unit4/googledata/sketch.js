@@ -5,7 +5,7 @@ let img;
 function preload() {
   song1 = loadSound("assets/Danny.m4a");
   img1 = loadImage('assets/minecraft.png');
-  img2 = loadImage('assets/Survey.png');
+  img2 = loadImage('assets/survey.png');
   song1.loop();
   song1.pause();
 }

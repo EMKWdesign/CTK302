@@ -4,8 +4,7 @@ let img;
 
 function preload() {
   song1 = loadSound("assets/Danny.m4a");
-  //img1 = loadImage('assets/minecraft.png');
-  //img2 = loadImage("assets/survey.png");
+img1 = loadImage('assets/minecraft.jpg');
   song1.loop();
   song1.pause();
 }
@@ -49,7 +48,6 @@ function gotData(data) {
 function draw() {
   background('blue');
   image(img1, 0, 0, width, height);
-  image(img2, 250, 50, 500, 140);
   // // iterate through the bubbles and display the objects!
   for (let i = 0; i < bubbles.length; i++) {
     bubbles[i].display();
@@ -64,8 +62,6 @@ rect(20, 534, 320, 260);
 text("Key:\n\n1.) Favorite Monster Mob\n\n2.) Favorite Farm Animal\n\n3.) Favorite Tameable Pet\n\n4.) Favorite Animal Overall", 50, 570);
 }
 
-
-//https://forms.gle/J8j85Fq9Xjt4GahE9
 // my Bubble class
 class Bubble {
 

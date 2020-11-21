@@ -99,7 +99,7 @@ class Bubble {
 function mousePressed(){
   if ((mouseX > 750) && (mouseX < 980) && (mouseY > 757) && (mouseY < 787)){
     //range accounting for text length
-    window.open("https://forms.gle/J8j85Fq9Xjt4GahE9");
+    window.open("https://docs.google.com/forms/d/e/1FAIpQLSf_FSpREuA9TfMX3kZDDi4S1iiZ3HhY8ddcc7nCDkVoNBwIhA/viewform?usp=sf_link");
 }}
 
 function mouseReleased() {

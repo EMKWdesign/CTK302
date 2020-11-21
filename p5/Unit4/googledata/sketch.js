@@ -3,7 +3,7 @@ var bubbles = [];
 let img1;
 
 function preload() {
-  song1 = loadSound("assets/Danny.mp3");
+  song1 = loadSound("assets/MinecraftDanny.mp3");
 img1 = loadImage('assets/minecraft.jpg');
   song1.loop();
   song1.pause();

@@ -82,7 +82,6 @@ image(forestImage, width/2, height/2, 1900, 1300);
 textFont('SimplisickyFill')
   textAlign(CENTER);
   text("Catch The Fairies!", width / 2, 600, windowWidth - 200, windowHeight - 200);
-
 }
 
 function deviceShaken() {
